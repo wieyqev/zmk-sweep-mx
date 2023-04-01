@@ -31,11 +31,15 @@
         };
     };
 
-    combo_esc {
-      timeout-ms = <50>;
-      key-positions = <0 1>;
-      bindings = <&kp ESC>; // ESC
-      layers = <0 1 2 3 4 5>;
+    combos {
+      compatible = "zmk,combos";
+      
+      // Left-hand combos
+      COMBO(ESC, 0 1)
+      //COMBO(LEFT_BRACE, 2 3)
+
+      // Right-hand combos
+
     };
 
 
@@ -64,7 +68,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 TAB   &kp SPACE      &kp BSPC  &lt 1 ENTER
+                                            &lt 2 TAB  &lt 3 SPACE    &kp BSPC  &lt 1 ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
