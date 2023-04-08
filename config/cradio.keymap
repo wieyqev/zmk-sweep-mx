@@ -157,8 +157,8 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-            &reset     &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans      &reset
+        //│          │          │          │          │PROFILE 0 │   │          │          │          │          │          │
+            &trans     &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
           &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
