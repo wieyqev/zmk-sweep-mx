@@ -109,11 +109,11 @@
         //│  ~       │   `      │  [       │  ]       │          │   │  ^       │  {       │  }       │          │          │
            &kp TILDE   &kp GRAVE   &kp LBKT   &kp RBKT   &trans        &kp CARET  &kp LBRC   &kp RBRC   &trans      &trans 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CTRL A   │ CTRL S   │ CTRL D   │  $       │  %       │   │  ;       │  -       │  =       │  \       │          │
-            &kp LC(A)  &kp LC(S) &kp LC(D)  &kp DLLR   &kp PRCNT      &kp SEMI  &kp MINUS  &kp EQUAL  &kp BSLH   &trans
+        //│ CTRL A   │ CTRL S   │ CTRL D   │  $       │  %       │   │          │   ;      │   :      │  \       │   _      │
+            &kp LC(A)  &kp LC(S) &kp LC(D)  &kp DLLR   &kp PRCNT      &trans    &kp SEMI   &kp COLON  &kp BSLH   &kp UNDER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CTRL Z   │ CTRL X   │ CTRL C   │ CTRL V   │          │   │  :       │  _       │  +       │  │       │          │
-           &kp LC(Z) &kp LC(X)   &kp LC(C)  &kp LC(V)   &trans         &kp COLON   &kp UNDER  &kp PLUS   &kp PIPE   &trans
+        //│ CTRL Z   │ CTRL X   │ CTRL C   │ CTRL V   │          │   │          │          │          │  │       │          │
+           &kp LC(Z) &kp LC(X)   &kp LC(C)  &kp LC(V)   &trans         &trans    &trans     &trans     &kp PIPE     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -130,7 +130,7 @@
             &kp F5     &kp F6     &kp F7     &kp F8     &trans         &trans    &kp LBKT    &kp RBKT   &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ F9       │ F10      │ F11      │ F12      │          │   │          │    (     │    )     │          │          │
-            &kp F9     &kp F10    &kp F11    &kp F12    &trans         &trans    &kp LBKT    &kp RBKT   &trans     &trans   
+            &kp F9     &kp F10    &kp F11    &kp F12    &trans         &trans    &kp LS(N9)  &kp LS(N0)  &trans     &trans   
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
