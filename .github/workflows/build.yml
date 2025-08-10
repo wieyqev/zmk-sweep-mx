@@ -46,7 +46,7 @@ jobs:
       - name: Rename zmk.uf2
         run: cp build/zephyr/zmk.uf2 cradio_left_nice_nano_v2.uf2
 
-      - name: Archive (Cradio/Sweep Left)
+      - name: Archive1 (Cradio/Sweep Left)
         uses: actions/upload-artifact@v4
         with:
           name: firmware-zmk-sweep
@@ -61,7 +61,7 @@ jobs:
       - name: Rename zmk.uf2
         run: cp build/zephyr/zmk.uf2 cradio_right_nice_nano_v2.uf2
 
-      - name: Archive (Cradio/Sweep Right)
+      - name: Archive2 (Cradio/Sweep Right)
         uses: actions/upload-artifact@v4
         with:
           name: firmware-zmk-sweep
